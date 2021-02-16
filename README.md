@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Alex Wojtak Portfolio
 
 You can use the [editor on GitHub](https://github.com/alexwojtak/alexwojtak.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
