@@ -4,26 +4,15 @@ You can use the [editor on GitHub](https://github.com/alexwojtak/alexwojtak.gith
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Recent Projects
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Here are some of my recent projects:
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+- [React Project: Soundboard based on TV show **community**](https://github.com/alexwojtak/React004)
+- [Basic node project: mixed messages](https://github.com/alexwojtak/mixedmessages)
+- [HTML project: survey form](https://github.com/alexwojtak/fccproject2)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
