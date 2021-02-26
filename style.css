@@ -1,0 +1,197 @@
+@keyframes pulse{
+	from {;
+	  -moz-transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	transform: scale(1, 1);  
+	}
+	to {
+	  -moz-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1); 
+	}
+  }
+
+html{
+	height: 100%;
+	font-family:  Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+body{
+	height: 100%;
+	text-align: center;
+	background-color: #333333;
+}
+
+.navbar {
+	z-index: 1000;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+}
+
+.sectionTitle{
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.clickthrough{
+	display: block;
+}
+.bordercontainer{
+	box-sizing: border-box;
+	height:100%;
+	border: 40px solid #333333;
+	text-align: center;
+	font-family:  Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 3.5vw;
+	font-weight: bolder;
+	color:  #333333;
+}
+.bordercontainer:hover{
+	animation-name: pulse;
+	animation-duration: 0.8s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(.26,1.46,.5,-0.07);
+}
+
+#titleContainer{
+	position: relative;
+	top:50%;
+	-moz-transform: translate(0px, -50%);
+	-webkit-transform: translate(0px, -50%);
+	-o-transform: translate(0px, -50%);
+	-ms-transform: translate(0px, -50%);
+	transform: translate(0px, -50%);
+	
+}
+
+#firstName{
+	text-align: center;
+	font-family: 'Alex Brush', cursive;
+	font-size: 9vw;
+	font-weight: 100;
+	color:  #F5F5F5;
+}
+
+#surname{
+	text-align: center;
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 6vw;
+	font-weight: bolder;
+	color: #D3D3D3;
+}
+
+#projects{
+	position: fixed;
+	top: 20%;
+	width: 50%;
+	height: 40%;
+	left: 0;
+	right: 50%;
+	background-color: #FFFFFF;
+	background-image: url("1.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#aboutMe{
+	position: fixed;
+	top: 20%;
+	width: 50%;
+	height: 40%;
+	left: 50%;
+	background-image: url("2.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#cv{
+	position: fixed;
+	top: 60%;
+	width: 50%;
+	height: 40%;
+	left: 0;	
+	background-image: url("3.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+#linkBank{
+	position: fixed;
+	top: 60%;
+	width: 50%;
+	height: 40%;
+	left: 50%;	
+	background-image: url("4.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+
+@media only screen and (max-width: 600px) {
+#firstName{
+	text-align: center;
+	font-family: 'Alex Brush', cursive;
+	font-size: 12vw;
+	font-weight: 100;
+	color:  #F5F5F5;
+}
+
+#surname{
+	text-align: center;
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 9vw;
+	font-weight: bolder;
+	color: #D3D3D3;
+}
+
+#aboutMe{
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	top: auto;
+	left: 0;
+	right: 0%;
+	margin-top: 30%;
+}
+#projects{
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	top: auto;
+	left: 0;
+	right: 0%;
+}
+#cv{
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	top: auto;
+	left: 0;
+	right: 0%;	
+}
+#linkBank{
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	top: auto;
+	left: 0;
+	right: 0%;
+}
+}
