@@ -1,0 +1,19 @@
+.mainContainer{
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	height:100%;
+	top: 20%;
+	text-align: center;
+	font-family:  Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-size: 3.5vw;
+	font-weight: bolder;
+	color:  #FFFFFF;
+}
+.clickthrough{
+	border: 4vw solid #333333;
+	border: 2vw solid #333333;
+}
+.med{
+	font-size: medium;
+}
