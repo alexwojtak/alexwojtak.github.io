@@ -113,6 +113,7 @@ body{
 	width: 50%;
 	height: 40%;
 	left: 50%;
+	background-color: #FFFFFF;
 	background-image: url("2.jpg");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -125,6 +126,7 @@ body{
 	width: 50%;
 	height: 40%;
 	left: 0;	
+	background-color: #FFFFFF;
 	background-image: url("3.jpg");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -137,6 +139,7 @@ body{
 	width: 50%;
 	height: 40%;
 	left: 50%;	
+	background-color: #FFFFFF;
 	background-image: url("4.jpg");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
