@@ -14,3 +14,16 @@
 	transform: scale(1.1, 1.1); 
 	}
   }
+
+#topLeft{
+background-image: url("5.jpg");
+}
+#topRight{
+background-image: url("6.jpg");
+}
+#bottomLeft{
+background-image: url("7.jpg");
+}
+#bottomRight{
+background-image: url("8.jpg");
+}
