@@ -14,7 +14,7 @@
 	transform: scale(-1.1, 1.1); 
 	}
   }
-
+/*
 .clickthrough{
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
@@ -22,4 +22,4 @@
 .bordercontainer{
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
-}
+}*/
