@@ -1,0 +1,43 @@
+<html> 
+	<head>
+		<link rel="stylesheet" type="text/css" href="01b.css" />
+		<script type="text/javascript">
+			var cross = 0;
+			function toggleani() {
+				if (cross == 0){
+					cross = 1;
+					ani();
+				}else{
+					cross = 0;
+					unani();
+				}
+			}	
+			function ani(){
+				document.getElementById('img').classList.add('classname');
+				document.getElementById('img2').classList.add('classname2');
+				document.getElementById('img3').classList.add('classname3');
+				document.getElementById('img').classList.remove('classname4');
+				document.getElementById('img2').classList.remove('classname5');
+				document.getElementById('img3').classList.remove('classname6');				
+			}
+			function unani(){
+				document.getElementById('img').classList.remove('classname');
+				document.getElementById('img2').classList.remove('classname2');
+				document.getElementById('img3').classList.remove('classname3');
+				document.getElementById('img').classList.add('classname4');
+				document.getElementById('img2').classList.add('classname5');
+				document.getElementById('img3').classList.add('classname6');
+			}
+		</script>
+	</head>
+	<body>
+		<div  onclick="toggleani()" class="container">
+			<div id="img2" class="allBox box2">
+			</div>		
+			<div id="img3" class="allBox box3">
+			</div>
+			<div id="img" class="allBox box1">
+			</div>			
+		</div>
+	</body>
+</html>

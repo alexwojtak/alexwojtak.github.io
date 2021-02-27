@@ -1,0 +1,122 @@
+body{
+	background-color:purple;
+}
+
+.container{
+	position:absolute;
+	width: 90%;
+    height: 90%;
+}
+
+.allBox{
+	position:relative;
+	border-radius: 4px 4px 4px 4px;
+    background: pink;
+	width: 100px;
+    height: 10px;
+	top:50%;
+	left:50%;	
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.33); 
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.33);	
+}
+
+.box1 {
+	align:auto;
+	transform: rotate(0deg) translate(0px, -40px);
+	;
+}
+
+.box2 {
+	align:auto;
+	transform: rotate(0deg) translate(0px, 40px);
+}
+
+.box3 {
+	align:auto;
+	transform: rotate(0deg) translate(0px, 0px);
+}
+
+.classname {
+  -webkit-animation-name: cssAnimation;
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation {
+	0% {-webkit-transform: rotate(0deg) translate(0px, -40px);}
+	50%  {-webkit-transform: rotate(0deg) translate(0px, -10px);}
+	100% {-webkit-transform: rotate(135deg) translate(-8px, 7px);}
+}
+
+.classname2 {
+  -webkit-animation-name: cssAnimation2;
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation2 {
+	0% {-webkit-transform: rotate(0deg) translate(0px, 40px);}
+	50%  {-webkit-transform: rotate(0deg) translate(0px, 10px);}
+	100% {-webkit-transform: rotate(45deg) translate(8px, 7px);}
+}
+
+.classname3 {
+  -webkit-animation-name: cssAnimation3;
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation3 {
+	0% {-webkit-transform: rotate(0deg) translate(0px 40px);}
+	50%  {-webkit-transform: rotate(0deg) scaleX(0.01) translate(0px, 0px);}
+	100% {-webkit-transform: rotate(0deg) scaleX(0.01) translate(0px, 0px);}
+}
+
+.classname4 {
+  -webkit-animation-name: cssAnimation4;
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation4 {
+	0% {-webkit-transform: rotate(135deg) translate(-8px, 7px);}
+	50%  {-webkit-transform: rotate(0deg) translate(0px, -10px);}
+	100% {-webkit-transform: rotate(0deg) translate(0px, -40px);}
+}
+
+.classname5 {
+  -webkit-animation-name: cssAnimation5;
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation5 {
+	0% {-webkit-transform: rotate(45deg) translate(8px, 7px);}
+	50%  {-webkit-transform: rotate(0deg) translate(0px, 10px);}
+	100% {-webkit-transform: rotate(0deg) translate(0px, 40px);}
+}
+
+.classname6 {
+  -webkit-animation-name: cssAnimation6;
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation6 {
+	0% {-webkit-transform: rotate(0deg) scaleX(0.01) translate(0px, 0px);}	
+	50%  {-webkit-transform: rotate(0deg) scaleX(0.01) translate(0px, 0px);}
+	100% {-webkit-transform: rotate(0deg) translate(0px 40px);}
+
+}

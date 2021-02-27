@@ -1,0 +1,225 @@
+// use only the available space inside the 400x400 frame
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+	background: #fff;
+	color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/* pyramid day css by Alex Wojtak */
+
+/* animation for sun passing overhead. Height increase lessened at midday to reduce 'bounce' as direction changes */
+@keyframes ecliptic {
+  0% {left: 0%; top: 30%;}
+	25% {left: 25%; top: 25%;}
+	50% {left: 50%; top: 22%;}
+	75% {left: 75%; top: 25%;}
+  100% {left: 80%; top: 30%;}
+}
+
+/* animation to increase shadow of left half of pyramid over the day */
+@keyframes pyramidLeft {
+  0% {border-bottom: 100px solid ivory;}
+	25% {border-bottom: 100px solid ivory;}
+	50% {border-bottom: 100px solid #DDDDDD;}
+	75% {border-bottom: 100px solid #CCCCCC;}
+  100% {border-bottom: 100px solid #CCCCCC;}
+}
+
+/* animation to increase shadow of right half of pyramid over the day */
+@keyframes pyramidRight {
+  0% {border-bottom: 100px solid #CCCCCC;}
+	25% {border-bottom: 100px solid #CCCCCC;}
+	50% {border-bottom: 100px solid #DDDDDD;}
+	75% {border-bottom: 100px solid ivory;}
+  100% {border-bottom: 100px solid ivory;}
+}
+
+/* animation for pyramid shadow. Done by hand. Full transform styling left in for compatability, even though it makes this part very long.  */
+@keyframes shadow {
+  0% {
+		-moz-transform: translate(-56px, 60px) skew(29deg, 0deg);
+		-webkit-transform: translate(-56px, 60px) skew(29deg, 0deg);
+		-o-transform: translate(-56px, 60px) skew(29deg, 0deg);
+		-ms-transform: translate(-56px, 60px) skew(29deg, 0deg);
+		transform: translate(-50px, 60px) skew(39deg, 0deg);
+	}
+	25% {
+		-moz-transform: translate(-56px, 60px) skew(29deg, 0deg);
+		-webkit-transform: translate(-56px, 60px) skew(29deg, 0deg);
+		-o-transform: translate(-56px, 60px) skew(29deg, 0deg);
+		-ms-transform: translate(-56px, 60px) skew(29deg, 0deg);
+		transform: translate(-56px, 60px) skew(29deg, 0deg);
+	}
+	50% {
+		-moz-transform: translate(-80px, 60px) skew(0deg, 0deg);
+		-webkit-transform: translate(-80px, 60px) skew(0deg, 0deg);
+		-o-transform: translate(-80px, 60px) skew(0deg, 0deg);
+		-ms-transform: translate(-80px, 60px) skew(0deg, 0deg);
+		transform: translate(-80px, 60px) skew(0deg, 0deg);
+	}
+	75% {
+		-moz-transform: translate(-100px, 60px) skew(-29deg, 0deg);
+		-webkit-transform: translate(-100px, 60px) skew(-29deg, 0deg);
+		-o-transform: translate(-100px, 60px) skew(-29deg, 0deg);
+		-ms-transform: translate(-100px, 60px) skew(-29deg, 0deg);
+		transform: translate(-100px, 60px) skew(-29deg, 0deg);
+	}
+  100% {
+		-moz-transform: translate(-165px, 60px) skew(-65deg, 0deg);
+		-webkit-transform: translate(-165px, 60px) skew(-65deg, 0deg);
+		-o-transform: translate(-165px, 60px) skew(-65deg, 0deg);
+		-ms-transform: translate(-165px, 60px) skew(-65deg, 0deg);
+		transform: translate(-145px, 60px) skew(-65deg, 0deg);
+	}
+}
+
+/* animation for fade in/out. div with id 'cover' is placed at high z value and fades out and in to match outer 'background' */
+
+@keyframes night {
+	0% {background-color: #070700;}
+	30% {background-color: transparent;}
+	70% {background-color: transparent;}
+	100% {background-color: #070700;}	
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	transform: translate(-50%,-50%);
+}
+
+
+#sky{
+	position: absolute;
+	background-color: #87CEEB;
+	top: 0%;
+	width: 100%;
+	height: 60%;
+}
+
+#sand{
+	position: absolute;
+	background-color: #F2D160; /*  html color 'sand' (#c2b280) looks terrible */
+	top: 60%;
+	width: 100%;
+	height: 40%;
+}
+
+#pyramidLeft{
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: 55%;
+/*  Triangles created using the 'transparent border' method */
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid ivory;
+	
+	-moz-transform: translate(-70px, -60px)  skew(-10deg, 0deg);
+	-webkit-transform: translate(-70px, -60px)  skew(-10deg, 0deg);
+	-o-transform: translate(-70px, -60px)  skew(-10deg, 0deg);
+	-ms-transform: translate(-70px, -60px)  skew(-10deg, 0deg);
+	transform: translate(-70px, -60px) skew(-10deg, 0deg);
+	
+	animation-name: pyramidLeft;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#pyramidRight{
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: 50%;
+	border-left: 10px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid ivory;
+	
+	-moz-transform: translate(-1px, -60px) skew(22deg, 0deg);
+	-webkit-transform: translate(-1px, -60px) skew(22deg, 0deg);
+	-o-transform: translate(-1px, -60px) skew(22deg, 0deg);
+	-ms-transform: translate(-1px, -60px) skew(22deg, 0deg);
+	transform: translate(-1px, -40px) skew(22deg, 0deg);
+	
+	animation-name: pyramidRight;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;	
+}
+#shadow{
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: 50%;
+	border-left: 78px solid transparent;
+	border-right: 80px solid transparent;
+	border-top: 80px solid #444444;
+	
+	-moz-transform: translate(-62px, 60px) skew(22deg, 0deg);
+	-webkit-transform: translate(-62px, 60px) skew(22deg, 0deg);
+	-o-transform: translate(-62px, 60px) skew(22deg, 0deg);
+	-ms-transform: translate(-62px, 60px) skew(22deg, 0deg);
+	transform: translate(-62px, 60px) skew(22deg, 0deg);
+
+	animation-name: shadow;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;	
+}
+#sun{
+	position: absolute;
+	top: 120px;
+	left: 90px;
+	width: 50px;
+	height: 50px;
+	background: yellow;
+	border-radius: 50%;
+	
+	animation-name: ecliptic;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#marquee{
+	position: absolute;
+	z-index: 100;
+	top: 20%;
+	left: 20%;
+	width: 60%;
+	height: 60%;
+	border-radius: 50%;
+/*  'window' created with large sharp box shadow around transparent circular div. */
+	box-shadow: 0 0 0 9999px rgba(7, 7, 0, 1);
+}
+
+#cover{
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+	animation-name: night;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
