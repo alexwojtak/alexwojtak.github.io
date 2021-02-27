@@ -1,0 +1,35 @@
+body{
+    position: relative;
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
+    background-color: #333333;
+    font-family:  Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: #FFFFFF;
+}
+form{
+    text-align: center;
+    margin-bottom: 10%;
+}
+a{
+    color: #FFFFFF;
+}
+.centered{
+    text-align: center;
+}
+#title{
+    text-align: center;
+}
+#description{
+    text-align: center;
+}
+#container{
+    background-color: #333333;
+    opacity: 85%;
+    width : 50%;
+    max-width: 400px;
+    margin: auto;
+    border: 9px solid #000000;
+    border-radius: 5px;
+    font-size: 1.3vw;
+	font-weight: 100;
+}

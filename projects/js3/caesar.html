@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="contactstyle.css">
+        <script src="caesar.js"></script>
+        <title>
+        Contact Form
+        </title>
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="title">Caesar Cipher</h1>
+            <p id="description">
+            Enter a text string and number to increment each letter that many places. 
+            </p>
+            <form id="survey-form" onsubmit="caesar()">
+            <label id="name-label" for="text">Input:
+            </label><br>
+            <input type="text" id="name"  name="inputText" placeholder="Text" required ><br>  
+            <input type="number" id="number"  name="inputText" placeholder="Number" required min="1" max="26"><br>  
+
+            <input type="submit" id="submit"  value="Submit">
+            
+            </form>
+            <div class="centered"><a href="http://www.alexwojtak.com">Home</a></div>
+            <div class="centered"><a href="http://www.alexwojtak.com/links.html">Contact</a></div>
+        </div>
+    </body>
+  </html>
