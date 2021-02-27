@@ -1,7 +1,12 @@
 body{
 	background-color: #333333;
+	display: flex;
+	flex-flow: column nowrap;
 }
-
+.mainContainer{
+	display: flex;
+	flex-flow: row nowrap;
+}
 a{
 	font-family:  Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 	font-size: 3.5vw;
@@ -20,6 +25,7 @@ a{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-image: url("2.jpg");
 }
 .CVContainer{
 	width: 100%;	

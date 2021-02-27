@@ -67,14 +67,9 @@ body{
 }
 
 #titleContainer{
-	position: relative;
-	top:50%;
-	-moz-transform: translate(0px, -50%);
-	-webkit-transform: translate(0px, -50%);
-	-o-transform: translate(0px, -50%);
-	-ms-transform: translate(0px, -50%);
-	transform: translate(0px, -50%);
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;	
 }
 
 #firstName{
