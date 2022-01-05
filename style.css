@@ -26,10 +26,18 @@ body{
 	background-color: #333333;
 }
 
+a{
+	color: #E9E9E9;
+}
+
+a:visited{
+	color: #CFCFCF;
+}
+
 .navbar {
 	z-index: 1000;
 	overflow: hidden;
-	background-color: #333;
+	background-color: #333333;
 	position: fixed;
 	top: 0;
 	width: 100%;
