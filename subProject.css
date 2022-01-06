@@ -46,6 +46,7 @@ a{
 	height: 50%;
 	background-size: cover;
 	margin: 1vw;
+	color: #333333;
 }
 .projectElement:hover{
 	animation-name: pulse;

@@ -9,11 +9,14 @@
 	font-size: 3.5vw;
 	font-weight: bolder;
 	color:  #FFFFFF;
+	flex-direction: column;
 }
-.clickthrough{
-	border: 4vw solid #333333;
-	border: 2vw solid #333333;
+
+.certification{
+	margin: 5vh;
+	
 }
+
 .med{
 	font-size: medium;
 }
