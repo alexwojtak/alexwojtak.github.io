@@ -1,7 +1,13 @@
 body{
 	background-color: #333333;
 }
-
+a{
+	color: #333333;
+	text-decoration: underline;
+}
+a:visited{
+	color: #555555;
+}
 #aboutMe{
 	position: fixed;
 	display: flex;
@@ -11,7 +17,6 @@ body{
 	left: 20%;
 	background-color: #333333;
 	text-align: center;
-	background-image: url("3.jpg");
 }
 #photo{
 	position: fixed;
@@ -27,19 +32,16 @@ body{
 	max-width:40vw;
 	height: auto;
 }
-#aboutMeTextContainer{
-
+#aboutMe{
 	min-height: 100px;
 	display: inline-flex;
 	align-items: center;
-}
-
-#aboutMeText{
 	text-align: left;
 	margin: 15px 10% 10% 10% ;
 	padding: 10px;
 	background: rgba(255, 255, 255, 0.7);
 	font-size: 2vmin;
+	line-height: 200%;
 }
 
 @media only screen and (max-width: 600px) {
