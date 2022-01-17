@@ -140,6 +140,25 @@ a:visited{
 	background-size: cover;	
 }
 
+#mainLeft{
+	width: 49vw;
+	height: 75vh;
+	background-image: url("1.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#mainRight{
+	width: 49vw;
+	height: 75vh;
+	background-image: url("2.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 @media only screen and (max-width: 600px) {
 #firstName{
 	text-align: center;
